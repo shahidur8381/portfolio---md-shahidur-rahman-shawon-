@@ -1,0 +1,19 @@
+IMPORTANT: Add these logo images to this directory
+
+Required logo files:
+1. kuetLogo.png - KUET university logo
+2. cityCollegeLogo.png - Rajshahi Govt. City College logo
+3. freelanceLogo.png - Freelance/Fiverr logo
+4. bit2byteLogo.png or bit2byteLogo.webp - Bit2Byte Club logo
+5. feriwalaLogo.webp - Feriwala project logo
+6. bitfestLogo.webp - BitFest event logo
+7. achievementLogo.webp - Achievement/trophy icon
+
+Recommended size: 200x200 to 400x400 pixels
+Format: PNG or WEBP with transparent background
+
+Until you add actual logos, you can temporarily:
+- Copy any existing logo (e.g., stanfordLogo.png) and rename it
+- Or download placeholder images from https://placeholder.com/
+
+The website will not run properly without these images!

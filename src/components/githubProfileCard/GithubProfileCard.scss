@@ -1,0 +1,135 @@
+@import "../../_globalColor";
+
+.reach-out {
+  padding: 3rem 0;
+}
+
+.reach-out-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.prof-title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.reach-out-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.reach-out-card {
+  width: 100%;
+  max-width: 460px;
+  background: rgba(0, 0, 0, 0.035);
+  border-radius: 18px;
+  padding: 2.5rem;
+  box-shadow: $lightBoxShadow 0 25px 35px -25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.dark-mode .reach-out-card {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: none;
+}
+
+.bio-text {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.location-div {
+  text-shadow: $githubProfileCardLocationTS;
+}
+
+.desc-prof {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.opp-div {
+  padding-bottom: 0.5rem;
+}
+
+.image-content-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 0.5rem solid $githubProfileCardBorder;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  box-shadow: $lightBoxShadow 0 30px 30px -30px;
+  transition: all 0.3s ease-out;
+}
+
+.profile-image:hover {
+  box-shadow: none;
+}
+
+.reach-out-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reach-out-contact .contact-div-main {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .prof-title {
+    font-size: 40px;
+  }
+
+  .reach-out-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reach-out {
+    padding: 2.5rem 0;
+  }
+
+  .prof-title {
+    font-size: 34px;
+  }
+
+  .bio-text {
+    font-size: 18px;
+  }
+
+  .desc-prof {
+    font-size: 16px;
+  }
+
+  .reach-out-contact .contact-div-main {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .reach-out-card {
+    max-width: 100%;
+    padding: 1.75rem;
+  }
+
+  .profile-image {
+    max-width: 220px;
+  }
+}

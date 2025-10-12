@@ -1,0 +1,40 @@
+@import "../_globalColor";
+
+.main {
+  width: 100%;
+  max-width: 100vw;
+  padding: 20px 2%;
+  margin: 0px auto;
+  margin-top: 80px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: white;
+  transition: "0.1s";
+}
+
+/* Ensure content doesn't overlap with fixed header */
+body {
+  padding-top: 0;
+}
+
+/* Add spacing for all main sections */
+section {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-top: 70px;
+    padding: 15px 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 10px 2%;
+  }
+}
