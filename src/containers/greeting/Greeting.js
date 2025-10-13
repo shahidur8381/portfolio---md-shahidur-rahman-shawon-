@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
@@ -6,11 +6,13 @@ import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
+import ResumePreview from "../../components/resumePreview/ResumePreview";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -48,13 +50,20 @@ export default function Greeting() {
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
-                  <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
+                  <>
+                    <div
+                      onClick={() => setIsPreviewOpen(true)}
+                      className="download-link-button"
+                      style={{cursor: "pointer"}}
+                    >
+                      <Button text="Download my resume" />
+                    </div>
+                    <ResumePreview
+                      isOpen={isPreviewOpen}
+                      onClose={() => setIsPreviewOpen(false)}
+                      resumeUrl="https://drive.google.com/file/d/108S1A6ErHaQwBQ-Y9QeM4qdF21Cv6O6t/preview"
+                    />
+                  </>
                 )}
               </div>
             </div>
