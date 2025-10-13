@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Web Developer 🚀 with expertise in HTML, CSS, JavaScript, React, Express, Node.js, Next.js, Flask, Django, MongoDB, SQL and more. Aspiring Data Scientist and Machine Learning enthusiast currently exploring the fascinating world of AI and data analytics."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1Snr-QefA5GHrov3X87n9ieD4JuEmsh0L/view?usp=sharing",
+    "https://drive.google.com/file/d/108S1A6ErHaQwBQ-Y9QeM4qdF21Cv6O6t/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
