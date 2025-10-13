@@ -3,13 +3,21 @@
 .footer-div {
   margin-top: 4rem;
   padding: 3.5rem 6% 1.5rem;
-  background: linear-gradient(180deg, rgba(127, 90, 240, 0.08) 0%, rgba(12, 21, 44, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(127, 90, 240, 0.08) 0%,
+    rgba(12, 21, 44, 0) 100%
+  );
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
 }
 
 .dark-mode.footer-div {
-  background: linear-gradient(180deg, rgba(98, 65, 214, 0.1) 0%, rgba(9, 13, 26, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(98, 65, 214, 0.1) 0%,
+    rgba(9, 13, 26, 0) 100%
+  );
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
