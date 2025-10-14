@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "MD Shahidur Rahman",
-  title: "Hi all, I'm Shawon",
+  username: "MD Shahidur Rahman (Shawon)",
+  title: "Hi 👋 I'm Shawon",
   subTitle: emoji(
-    "A passionate Full Stack Web Developer 🚀 with expertise in HTML, CSS, JavaScript, React, Express, Node.js, Next.js, Flask, Django, MongoDB, SQL and more. Aspiring Data Scientist and Machine Learning enthusiast currently exploring the fascinating world of AI and data analytics."
+    "Full Stack + Blockchain + AI/ML Developer 🚀 Building the future with Web3 🔗, Smart Contracts 📜, and AI-powered solutions 🤖. Top-rated freelancer with 15+ international projects | 100% client satisfaction | Available for Web, Blockchain & AI/ML consulting 💼"
   ),
   resumeLink:
     "https://drive.google.com/file/d/108S1A6ErHaQwBQ-Y9QeM4qdF21Cv6O6t/view?usp=sharing",
@@ -49,25 +49,28 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "FULL STACK WEB DEVELOPER | OPEN FOR OPPORTUNITIES | EXPLORING DATA SCIENCE & ML",
+    "FULL STACK | BLOCKCHAIN | AI/ML DEVELOPER | OPEN FOR FREELANCE & WEB3 CONSULTING",
   skills: [
     emoji(
-      "⚡ Build complete web applications from frontend to backend - specializing in React, Next.js, Vue.js, Node.js, Express, Flask, and Django"
+      "⚡ Build full-stack web applications with React, Next.js, Vue.js, Node.js, Express, Django & Flask"
     ),
     emoji(
-      "⚡ Design and implement scalable database solutions with MongoDB and SQL, along with secure JWT authentication systems"
+      "⚡ Develop secure Smart Contracts (Solidity), DApps, NFT marketplaces & Web3 integrations (Ethers.js, Web3.js, IPFS)"
     ),
     emoji(
-      "⚡ Create responsive and interactive user interfaces with modern CSS frameworks and JavaScript libraries"
+      "⚡ Create AI/ML solutions: Predictive models, NLP chatbots, Computer Vision, Recommendation systems with TensorFlow & Scikit-learn"
     ),
     emoji(
-      "⚡ Develop RESTful APIs and integrate payment gateways for e-commerce solutions"
+      "⚡ Design scalable databases (MongoDB, PostgreSQL, MySQL, Redis) with JWT/OAuth authentication"
     ),
     emoji(
-      "⚡ Currently expanding skills in Data Science and Machine Learning to build intelligent, data-driven applications"
+      "⚡ Integrate payment gateways (Stripe, PayPal), real-time features (WebSockets), and API development (REST/GraphQL)"
     ),
     emoji(
-      "⚡ Available for freelance projects, internships, and full-time opportunities in web development"
+      "⚡ DevOps: Docker, AWS, CI/CD pipelines, Git workflows, Linux server management"
+    ),
+    emoji(
+      "⚡ 15+ international projects delivered | Top-rated on Fiverr | 100% client satisfaction"
     )
   ],
 
@@ -130,6 +133,26 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "git",
       fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "blockchain",
+      fontAwesomeClassname: "fas fa-link"
+    },
+    {
+      skillName: "ethereum",
+      fontAwesomeClassname: "fab fa-ethereum"
+    },
+    {
+      skillName: "ai-ml",
+      fontAwesomeClassname: "fas fa-robot"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -201,34 +224,36 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Freelance Full Stack Developer",
-      company: "Fiverr & Local Clients",
+      role: "Freelance Full Stack + Blockchain Developer",
+      company: "Fiverr, Upwork & Direct Clients",
       companylogo: require("./assets/images/freelanceLogo.png"),
-      date: "2022 – Present",
-      desc: "Working on various web development projects for international and local clients",
+      date: "January 2022 – Present",
+      desc: "Top-rated developer delivering Web, Blockchain & AI/ML solutions to international clients",
       descBullets: [
-        "Developed full-stack web applications using modern technologies",
-        "Delivered custom solutions for e-commerce, business websites, and web apps",
-        "Maintained client relationships and provided ongoing support"
+        "✅ 15+ international projects delivered with 100% client satisfaction",
+        "✅ Expertise: Full-stack web apps, Smart Contracts (Solidity), DApps, AI/ML integration",
+        "✅ Total Earnings: $12,000+ | Specializing in e-commerce, NFT platforms & SaaS solutions",
+        "✅ Technologies: React, Next.js, Node.js, Django, Solidity, Web3.js, TensorFlow"
       ]
     },
     {
       role: "Web Developer",
-      company: "Bit2Byte Club, KUET",
+      company: "Bit2Byte Tech Club, KUET",
       companylogo: require("./assets/images/bit2byteLogo.png"),
-      date: "2023 – Present",
-      desc: "Contributing to club projects and helping fellow students learn web development",
+      date: "October 2023 – Present",
+      desc: "Leading web development initiatives and mentoring junior developers",
       descBullets: [
-        "Developing club website and various tech projects",
-        "Conducting workshops and mentoring juniors"
+        "Developing club website & internal tools for event management",
+        "Mentoring 20+ juniors in web development, Git workflows & best practices",
+        "Organizing workshops & hackathons on modern web technologies"
       ]
     },
     {
-      role: "University Projects",
-      company: "KUET",
-      companylogo: require("./assets/images/kuetLogo.png"),
-      date: "2023 – Present",
-      desc: "Working on various academic and research projects in web development and data science"
+      role: "Volunteer Developer",
+      company: "BitFest 2025 (KUET's Largest Tech Fest)",
+      companylogo: require("./assets/images/bitfestLogo.webp"),
+      date: "February 2025",
+      desc: "Built event management system and coordinated technical logistics for 500+ participants"
     }
   ]
 };
@@ -244,20 +269,63 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "MAJOR PROJECTS THAT SHOWCASE MY FULL STACK DEVELOPMENT SKILLS",
+  title: "Featured Projects",
+  subtitle: "FULL STACK | BLOCKCHAIN | AI/ML PROJECTS SHOWCASING EXPERTISE",
   projects: [
     {
       image: require("./assets/images/feriwalaLogo.webp"),
-      projectName: "Feriwala",
+      projectName: "Feriwala — E-commerce Ecosystem",
       projectDesc:
-        "A comprehensive e-commerce platform for Bangladesh featuring three separate interfaces: Client Site (Vue.js) with cart management, filtering, and payment gateway integration; Seller Panel (React + Redux) with full CRUD operations for products, shipping & payment status tracking, and JWT authentication; Admin Panel (Next.js) with complete control over sellers, products, and users. A full-stack solution demonstrating expertise across multiple modern frameworks.",
+        "🛒 Multi-interface full-stack e-commerce platform: Client Site (Vue.js) with cart, filters & Stripe/PayPal integration | Seller Panel (React + Redux) with product CRUD, order tracking | Admin Dashboard (Next.js) with platform-wide control | JWT auth, real-time analytics, MongoDB database. Stack: Vue.js • React • Next.js • Node.js • Express • MongoDB • Redux • Stripe",
       footerLink: [
         {
-          name: "View Project",
+          name: "View Demo",
           url: "#"
         }
-        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/cryptoLogo.webp"),
+      projectName: "CryptoMarket — NFT Marketplace DApp",
+      projectDesc:
+        "🔗 Decentralized NFT minting & trading platform on Ethereum/Polygon | Smart contract-powered transactions | MetaMask & WalletConnect integration | IPFS for decentralized storage | Web3.js blockchain interaction | Gas optimization strategies. Stack: React • Solidity • Hardhat • Ethers.js • IPFS • Web3 • Tailwind CSS",
+      footerLink: [
+        {
+          name: "Live Demo",
+          url: "#"
+        },
+        {
+          name: "Smart Contract",
+          url: "#"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/aiLogo.webp"),
+      projectName: "AI Resume Analyzer",
+      projectDesc:
+        "🤖 ML-powered resume screening system: NLP for parsing & keyword extraction | Job-resume matching algorithm (92% accuracy) | Skill gap analysis & recommendations | ATS compatibility checker | Interactive D3.js dashboard | FastAPI real-time processing. Stack: Python • TensorFlow • NLP • FastAPI • React • PostgreSQL • D3.js",
+      footerLink: [
+        {
+          name: "Try It Out",
+          url: "#"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/notepadLogo.webp"),
+      projectName: "NotePAD — Collaborative Notes",
+      projectDesc:
+        "📝 Real-time collaborative note-taking app: Create, edit & share notes | Comment & collaboration features | Real-time sync with WebSockets | Markdown support & rich text editor | User authentication | Fully responsive. Stack: Flask • SQLite • JavaScript • Socket.io • HTML/CSS • Bootstrap",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Shahidur8381/NotePAD---Collaborative-Note-Taking-Web-App"
+        },
+        {
+          name: "Live Demo",
+          url: "#"
+        }
       ]
     }
   ],
@@ -363,9 +431,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Reach Out to Me 📬"),
+  title: emoji("Let's Build Something Amazing Together! �"),
   subtitle:
-    "Discuss a project or just want to say hi? I'm open for opportunities and collaborations!",
+    "Ready to start your next Web, Blockchain or AI/ML project? I'm available for freelance work, consulting & collaborations. 💼 Hourly Rate: $15-25/hour | Small Projects: $200-500 | Blockchain: $400+ | AI/ML: $350+ | 🎉 First-time clients get 10% OFF! Mention 'GITHUB10'",
   number: "+8801735838381",
   email_address: "shahidur8381@gmail.com",
   telegram: "@shahidur2903"
