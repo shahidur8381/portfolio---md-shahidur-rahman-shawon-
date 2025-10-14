@@ -270,7 +270,7 @@ const openSource = {
   display: true, // Set false to hide this section, defaults to true
   displayFormat: "tiles", // "list" or "tiles" - tiles format shows projects in a grid with better visual appeal
   autoSlide: true, // Enable automatic sliding animation for project tiles
-  slideInterval: 1500 // Slide interval in milliseconds (1.5 seconds)
+  slideInterval: 3000 // Slide interval in milliseconds (3 seconds)
 };
 
 // Some big projects you have worked on
