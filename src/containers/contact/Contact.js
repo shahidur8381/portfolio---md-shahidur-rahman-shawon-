@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {illustration, contactInfo} from "../../portfolio";
@@ -11,9 +11,44 @@ import ContactFormModal from "../../components/contactForm/ContactFormModal";
 export default function Contact({variant = "standalone", hideHeading = false}) {
   const {isDark} = useContext(StyleContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [animatedText, setAnimatedText] = useState("");
+  const [textIndex, setTextIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  // Auto-writing animation effect
+  useEffect(() => {
+    if (!contactInfo.animatedTexts || contactInfo.animatedTexts.length === 0) {
+      return;
+    }
+
+    const currentText = contactInfo.animatedTexts[textIndex];
+    const typingSpeed = isDeleting ? 50 : 100;
+    const pauseBeforeDelete = 2000;
+
+    const timer = setTimeout(
+      () => {
+        if (!isDeleting && charIndex < currentText.length) {
+          setAnimatedText(currentText.substring(0, charIndex + 1));
+          setCharIndex(charIndex + 1);
+        } else if (isDeleting && charIndex > 0) {
+          setAnimatedText(currentText.substring(0, charIndex - 1));
+          setCharIndex(charIndex - 1);
+        } else if (!isDeleting && charIndex === currentText.length) {
+          setTimeout(() => setIsDeleting(true), pauseBeforeDelete);
+        } else if (isDeleting && charIndex === 0) {
+          setIsDeleting(false);
+          setTextIndex((textIndex + 1) % contactInfo.animatedTexts.length);
+        }
+      },
+      isDeleting ? typingSpeed : typingSpeed
+    );
+
+    return () => clearTimeout(timer);
+  }, [charIndex, isDeleting, textIndex]);
 
   const isMerged = variant === "merged";
   const containerClass = isMerged
@@ -21,12 +56,20 @@ export default function Contact({variant = "standalone", hideHeading = false}) {
     : "main contact-margin-top";
   const containerId = isMerged ? undefined : "contact";
 
+  const displayTitle =
+    contactInfo.animatedTexts && contactInfo.animatedTexts.length > 0
+      ? animatedText
+      : contactInfo.title;
+
   const content = (
     <div className={containerClass} id={containerId}>
       <div className="contact-div-main">
         <div className="contact-header">
           {!hideHeading && (
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
+            <h1 className="heading contact-title">
+              {displayTitle}
+              <span className="typing-cursor">|</span>
+            </h1>
           )}
           {!hideHeading && (
             <p

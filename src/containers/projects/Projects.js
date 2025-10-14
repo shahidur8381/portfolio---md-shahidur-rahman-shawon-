@@ -11,6 +11,7 @@ export default function Projects() {
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
+  const [currentSlide, setCurrentSlide] = useState(0);
   // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
 
@@ -36,9 +37,27 @@ export default function Projects() {
     getRepoData();
   }, []);
 
+  // Auto-slide effect for tiles
+  useEffect(() => {
+    if (
+      openSource.autoSlide &&
+      openSource.displayFormat === "tiles" &&
+      repo.length > 0
+    ) {
+      const interval = setInterval(() => {
+        setCurrentSlide(prev => (prev + 1) % repo.length);
+      }, openSource.slideInterval || 4000);
+      return () => clearInterval(interval);
+    }
+  }, [repo]);
+
   function setrepoFunction(array) {
     setrepo(array);
   }
+
+  const displayFormat = openSource.displayFormat || "list";
+  const isTileFormat = displayFormat === "tiles";
+
   if (
     !(typeof repo === "string" || repo instanceof String) &&
     openSource.display
@@ -47,18 +66,59 @@ export default function Projects() {
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
           <h1 className="project-title">Open Source Projects</h1>
-          <div className="repo-cards-div-main">
+          <div
+            className={
+              isTileFormat
+                ? "repo-cards-div-main repo-tiles-layout"
+                : "repo-cards-div-main"
+            }
+          >
             {repo.map((v, i) => {
               if (!v) {
                 console.error(
                   `Github Object for repository number : ${i} is undefined`
                 );
               }
+              const isActive = isTileFormat
+                ? i === currentSlide ||
+                  i === (currentSlide + 1) % repo.length ||
+                  i === (currentSlide + 2) % repo.length
+                : true;
               return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
+                <div
+                  key={v.node.id}
+                  className={
+                    isTileFormat
+                      ? isActive
+                        ? "repo-tile-wrapper active-tile"
+                        : "repo-tile-wrapper"
+                      : ""
+                  }
+                  style={
+                    isTileFormat && !isActive ? {display: "none"} : undefined
+                  }
+                >
+                  <GithubRepoCard repo={v} isDark={isDark} />
+                </div>
               );
             })}
           </div>
+          {isTileFormat && (
+            <div className="slide-indicators">
+              {repo.map((_, i) => (
+                <button
+                  key={i}
+                  className={
+                    i === currentSlide
+                      ? "slide-indicator active"
+                      : "slide-indicator"
+                  }
+                  onClick={() => setCurrentSlide(i)}
+                  aria-label={`Go to slide ${i + 1}`}
+                />
+              ))}
+            </div>
+          )}
           <Button
             text={"More Projects"}
             className="project-button"

@@ -267,7 +267,10 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
+  displayFormat: "tiles", // "list" or "tiles" - tiles format shows projects in a grid with better visual appeal
+  autoSlide: true, // Enable automatic sliding animation for project tiles
+  slideInterval: 1500 // Slide interval in milliseconds (1.5 seconds)
 };
 
 // Some big projects you have worked on
@@ -435,12 +438,21 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Let's Build Something Amazing Together! �"),
+  title: emoji("Let's Build Something Amazing Together! 🚀"),
   subtitle:
-    "Ready to start your next Web, Blockchain or AI/ML project? I'm available for freelance work, consulting & collaborations. 💼 Hourly Rate: $15-25/hour | Small Projects: $200-500 | Blockchain: $400+ | AI/ML: $350+ | 🎉 First-time clients get 10% OFF! Mention 'GITHUB10'",
+    "Discuss a project, explore collaboration opportunities, or just want to say hi? I'm here to help bring your ideas to life!",
   number: "+8801735838381",
   email_address: "shahidur8381@gmail.com",
-  telegram: "@shahidur2903"
+  telegram: "@shahidur2903",
+  // Auto-writing animation for dynamic text display
+  animatedTexts: [
+    "Let's Build Something Amazing Together! 💡",
+    "Ready to Transform Your Vision into Reality? 🚀",
+    "Looking for Web, Blockchain or AI/ML Expert? 🔥",
+    "Need a Full Stack Developer? I'm Here! 💻",
+    "Let's Create Innovative Solutions Together! ✨",
+    "Your Next Project Starts Here! 🎯"
+  ]
 };
 
 // Twitter Section

@@ -15,6 +15,31 @@
 .contact-title {
   font-size: 65px;
   font-weight: 400;
+  position: relative;
+  display: inline-block;
+}
+
+/* Typing cursor animation */
+.typing-cursor {
+  color: #6c63ff;
+  font-weight: 300;
+  animation: blink 0.8s infinite;
+  margin-left: 3px;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.dark-mode .typing-cursor {
+  color: #00d9ff;
 }
 
 .contact-detail,
