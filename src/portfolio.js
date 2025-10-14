@@ -189,30 +189,34 @@ const educationInfo = {
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// Your top proficient stacks/tech experience
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Frontend Development (React, Next.js, Vue.js)", //Insert stack or technology you have experience in
+      progressPercentage: "92%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "80%"
+      Stack: "Backend Development (Node.js, Django, Flask)",
+      progressPercentage: "88%"
     },
     {
-      Stack: "Programming",
+      Stack: "Blockchain & Web3 (Solidity, Smart Contracts)",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Database (MongoDB, PostgreSQL, MySQL)",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "AI/ML & Data Science (TensorFlow, NLP)",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "DevOps & Cloud (Docker, AWS, CI/CD)",
       progressPercentage: "70%"
-    },
-    {
-      Stack: "Database Management",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Data Science",
-      progressPercentage: "60%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
