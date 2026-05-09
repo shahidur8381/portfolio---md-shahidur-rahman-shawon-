@@ -22,9 +22,8 @@ const illustration = {
 const greeting = {
   username: "MD Shahidur Rahman (Shawon)",
   title: "Hi 👋 I'm Shawon",
-  subTitle: emoji(
-    "Full Stack + Blockchain + AI/ML Developer 🚀 Building the future with Web3 🔗, Smart Contracts 📜, and AI-powered solutions 🤖. Top-rated freelancer with 15+ international projects | 100% client satisfaction | Available for Web, Blockchain & AI/ML consulting 💼"
-  ),
+  subTitle:
+    "A passionate Computer Science and Engineering student at KUET. Experienced in building scalable full-stack web applications, collaborative desktop and mobile software, and data-driven solutions using Machine Learning.",
   resumeLink:
     "https://drive.google.com/file/d/1Br5ZXsyxuR0I_oiuU2VDWTlxWumHCYK6/view?usp=drive_link",
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -49,28 +48,19 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "FULL STACK | BLOCKCHAIN | AI/ML DEVELOPER | OPEN FOR FREELANCE & WEB3 CONSULTING",
+    "FULL STACK WEB DEVELOPMENT | DATA SCIENCE & MACHINE LEARNING | SOFTWARE ENGINEERING",
   skills: [
     emoji(
-      "⚡ Build full-stack web applications with React, Next.js, Vue.js, Node.js, Express, Django & Flask"
+      "⚡ Build robust, full-stack web applications and e-commerce platforms using React, Next.js, Node.js, and Express"
     ),
     emoji(
-      "⚡ Develop secure Smart Contracts (Solidity), DApps, NFT marketplaces & Web3 integrations (Ethers.js, Web3.js, IPFS)"
+      "⚡ Develop collaborative mobile and desktop applications using Java and JavaFX"
     ),
     emoji(
-      "⚡ Create AI/ML solutions: Predictive models, NLP chatbots, Computer Vision, Recommendation systems with TensorFlow & Scikit-learn"
+      "⚡ Implement data processing, visualizations, and machine learning models using Python, Pandas, Numpy, and Scikit-Learn"
     ),
     emoji(
-      "⚡ Design scalable databases (MongoDB, PostgreSQL, MySQL, Redis) with JWT/OAuth authentication"
-    ),
-    emoji(
-      "⚡ Integrate payment gateways (Stripe, PayPal), real-time features (WebSockets), and API development (REST/GraphQL)"
-    ),
-    emoji(
-      "⚡ DevOps: Docker, AWS, CI/CD pipelines, Git workflows, Linux server management"
-    ),
-    emoji(
-      "⚡ 15+ international projects delivered | Top-rated on Fiverr | 100% client satisfaction"
+      "⚡ Design scalable databases and secure authentication systems using MongoDB, SQLite, and JWT"
     )
   ],
 
@@ -302,7 +292,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   displayFormat: "tiles", // "list" or "tiles" - tiles format shows projects in a grid with better visual appeal
   autoSlide: true, // Enable automatic sliding animation for project tiles
   slideInterval: 3000 // Slide interval in milliseconds (3 seconds)
@@ -316,57 +306,129 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/feriwalaLogo.webp"),
-      projectName: "Feriwala — E-commerce Ecosystem",
+      projectName: "Feriwala (E-Commerce Platform)",
       projectDesc:
-        "🛒 Multi-interface full-stack e-commerce platform: Client Site (Vue.js) with cart, filters & Stripe/PayPal integration | Seller Panel (React + Redux) with product CRUD, order tracking | Admin Dashboard (Next.js) with platform-wide control | JWT auth, real-time analytics, MongoDB database. Stack: Vue.js • React • Next.js • Node.js • Express • MongoDB • Redux • Stripe",
+        "Built a full stack e-commerce product level website with admin panel. Where client panel uses clerk, reactjs, jwt auth, season management and admin panel created using nextjs focusing on security.",
       footerLink: [
         {
-          name: "View Demo",
-          url: "#"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/cryptoLogo.webp"),
-      projectName: "CryptoMarket — NFT Marketplace DApp",
-      projectDesc:
-        "🔗 Decentralized NFT minting & trading platform on Ethereum/Polygon | Smart contract-powered transactions | MetaMask & WalletConnect integration | IPFS for decentralized storage | Web3.js blockchain interaction | Gas optimization strategies. Stack: React • Solidity • Hardhat • Ethers.js • IPFS • Web3 • Tailwind CSS",
-      footerLink: [
-        {
-          name: "Live Demo",
-          url: "#"
-        },
-        {
-          name: "Smart Contract",
-          url: "#"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/aiLogo.webp"),
-      projectName: "AI Resume Analyzer",
-      projectDesc:
-        "🤖 ML-powered resume screening system: NLP for parsing & keyword extraction | Job-resume matching algorithm (92% accuracy) | Skill gap analysis & recommendations | ATS compatibility checker | Interactive D3.js dashboard | FastAPI real-time processing. Stack: Python • TensorFlow • NLP • FastAPI • React • PostgreSQL • D3.js",
-      footerLink: [
-        {
-          name: "Try It Out",
-          url: "#"
+          name: "GitHub",
+          url: "https://github.com/Shahidur8381/Feriwala-Full-Stack-Bangladeshi-E-commerce-Platform"
         }
       ]
     },
     {
       image: require("./assets/images/notepadLogo.webp"),
-      projectName: "NotePAD — Collaborative Notes",
+      projectName: "SyncNote (Android)",
       projectDesc:
-        "📝 Real-time collaborative note-taking app: Create, edit & share notes | Comment & collaboration features | Real-time sync with WebSockets | Markdown support & rich text editor | User authentication | Fully responsive. Stack: Flask • SQLite • JavaScript • Socket.io • HTML/CSS • Bootstrap",
+        "Built an Android app SyncNote with Java - A powerful collaborative notepad app with real-time sync and secure sharing.",
       footerLink: [
         {
           name: "GitHub",
-          url: "https://github.com/Shahidur8381/NotePAD---Collaborative-Note-Taking-Web-App"
+          url: "https://github.com/Shahidur8381/SyncNote-Android-A-Powerful-Collaborative-Notepad-App-with-Real-Time-Sync-Sharing"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/notepadLogo.webp"),
+      projectName: "SyncNote (Desktop)",
+      projectDesc:
+        "Built a desktop version of SyncNote using JavaFX - A desktop-based collaborative notepad application with secure sharing.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Shahidur8381/SyncNote-A-Desktop-Based-Collaborative-Notepad-Application-with-Secure-Sharing"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/pwaLogo.webp"),
+      projectName: "KLAC (KUET Lab Assignment Cover Generator)",
+      projectDesc:
+        "Built a website name KLAC which automatically creates the KUET assignment & lab report cover page with information.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Shahidur8381/KLAC---KUET-Lab-Assignment-Cover-Generator"
         },
         {
           name: "Live Demo",
-          url: "#"
+          url: "https://klac.netlify.app"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/portfolioLogo.png"),
+      projectName: "Personal Portfolio Website",
+      projectDesc:
+        "Built a portfolio website (shahidur.me) using Vite + React to showcase projects and development skills.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Shahidur8381/Portfolio---MD-Shahidur-Rahman-Shawon-"
+        },
+        {
+          name: "Live Demo",
+          url: "https://shahidur.me"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/kuetLogo.png"),
+      projectName: "KUET Journalism Association Website",
+      projectDesc:
+        "Built a portfolio website for a club of KUET (KUET Journalism Association).",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Shahidur8381/-kuetja-portfolio"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/cryptoLogo.webp"),
+      projectName: "Kupata Coin ($KUPA)",
+      projectDesc:
+        "Built a memecoin website named Kupata Coin ($KUPA).",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Shahidur8381/KUPATA-coin-KUPA-"
+        },
+        {
+          name: "Live Demo",
+          url: "https://kupata.netlify.app"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/cryptoLogo.webp"),
+      projectName: "SBE-COIN",
+      projectDesc:
+        "Built another memecoin website SBE-COIN.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Shahidur8381/SBE-COIN"
+        },
+        {
+          name: "Live Demo",
+          url: "https://sbecoin.netlify.app/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/cryptoLogo.webp"),
+      projectName: "🥩The Great Beef Off — Trump vs Elon",
+      projectDesc:
+        "Built another memecoin website: The Great Beef Off — Trump vs Elon.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Shahidur8381/-The-Great-Beef-Off-Trump-vs-Elon"
+        },
+        {
+          name: "Live Demo",
+          url: "https://beefbeef.netlify.app/"
         }
       ]
     }
@@ -384,17 +446,25 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "Data Science Certification",
+      subtitle:
+        "Validated expertise in ML algorithms, neural networks, and data visualization.",
+      image: require("./assets/images/achievementLogo.webp"),
+      imageAlt: "Data Science Certificate",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1jbJhHGUsfC1Ia0-8NGS_xODxwktiPxTh/view?usp=sharing"
+        }
+      ]
+    },
+    {
       title: "Volunteer at BitFest 2025, KUET",
       subtitle:
         "Received volunteer certificate for contributing to one of the biggest tech fests at KUET",
       image: require("./assets/images/bitfestLogo.webp"),
       imageAlt: "BitFest Logo",
-      footerLink: [
-        {
-          name: "Certificate",
-          url: "#"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "Web Developer at Bit2Byte Club",
@@ -402,12 +472,7 @@ const achievementSection = {
         "Working as a web developer at Bit2Byte Club, KUET, contributing to various tech projects and mentoring students",
       image: require("./assets/images/bit2byteLogo.webp"),
       imageAlt: "Bit2Byte Logo",
-      footerLink: [
-        {
-          name: "Learn More",
-          url: "#"
-        }
-      ]
+      footerLink: []
     },
     {
       title: "Participant at BitFest 2025",
@@ -415,7 +480,7 @@ const achievementSection = {
         "Participated in BitFest 2025, KUET - an inter-university tech fest featuring programming contests, datathon competitions, and project showcase events",
       image: require("./assets/images/bitfestLogo.webp"),
       imageAlt: "BitFest Logo",
-      footerLink: [{name: "Event Info", url: "#"}]
+      footerLink: []
     },
     {
       title: "Top 5% in Full Stack Projects",

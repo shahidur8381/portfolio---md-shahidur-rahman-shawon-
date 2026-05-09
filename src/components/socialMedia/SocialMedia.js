@@ -87,7 +87,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-twitter"></i>
+          <i className="fa-brands fa-x-twitter"></i>
           <span></span>
         </a>
       ) : null}
@@ -135,7 +135,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-telegram"></i>
+          <i className="fa-brands fa-telegram-plane"></i>
           <span></span>
         </a>
       ) : null}

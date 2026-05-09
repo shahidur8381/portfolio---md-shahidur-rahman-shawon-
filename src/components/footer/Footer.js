@@ -44,7 +44,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="contact-item"
                 >
-                  {emoji("�")} Telegram: {contactInfo.telegram}
+                  <i className="fa-brands fa-telegram-plane" style={{marginRight: "8px", fontSize: "1.2rem"}}></i> Telegram: {contactInfo.telegram}
                 </a>
               )}
             </div>
