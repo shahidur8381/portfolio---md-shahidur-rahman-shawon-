@@ -154,6 +154,31 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "ai-ml",
       fontAwesomeClassname: "fas fa-robot"
     }
+  ,
+    {
+      skillName: "pandas",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "matplotlib",
+      fontAwesomeClassname: "fas fa-chart-pie"
+    },
+    {
+      skillName: "numpy",
+      fontAwesomeClassname: "fas fa-calculator"
+    },
+    {
+      skillName: "scikit-learn",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "deep learning",
+      fontAwesomeClassname: "fas fa-network-wired"
+    },
+    {
+      skillName: "neural networks",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -227,6 +252,16 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Software Engineering Intern",
+      company: "DecodeLab",
+      companylogo: require("./assets/images/freelanceLogo.png"), // fallback logo
+      date: "Feb 2026 - Jun 2026",
+      desc: "Contributed to the development and optimization of web applications, focusing on scalable architecture and clean code practices.",
+      descBullets: [
+        "Collaborated with the engineering team to integrate new features and resolve critical system bugs."
+      ]
+    },
     {
       role: "Freelance Full Stack + Blockchain Developer",
       company: "Fiverr, Upwork & Direct Clients",
