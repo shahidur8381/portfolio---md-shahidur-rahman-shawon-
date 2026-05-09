@@ -61,7 +61,10 @@ export default function Greeting() {
                     <ResumePreview
                       isOpen={isPreviewOpen}
                       onClose={() => setIsPreviewOpen(false)}
-                      resumeUrl="https://drive.google.com/file/d/108S1A6ErHaQwBQ-Y9QeM4qdF21Cv6O6t/preview"
+                      resumeUrl={greeting.resumeLink.replace(
+                        "/view?usp=drive_link",
+                        "/preview"
+                      )}
                     />
                   </>
                 )}

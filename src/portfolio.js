@@ -26,7 +26,7 @@ const greeting = {
     "Full Stack + Blockchain + AI/ML Developer 🚀 Building the future with Web3 🔗, Smart Contracts 📜, and AI-powered solutions 🤖. Top-rated freelancer with 15+ international projects | 100% client satisfaction | Available for Web, Blockchain & AI/ML consulting 💼"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/108S1A6ErHaQwBQ-Y9QeM4qdF21Cv6O6t/view?usp=sharing",
+    "https://drive.google.com/file/d/1Br5ZXsyxuR0I_oiuU2VDWTlxWumHCYK6/view?usp=drive_link",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
